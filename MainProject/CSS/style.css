@@ -4,14 +4,14 @@ body {
     display: flex;
     justify-content: center;
 }
-h1, h2, #stopka {
+h1, h2 {
     background: #000040;
     color: #8080ff;
     text-align: center;
 }
 
 #kontener {
-    background: white;
+    /*background: white;*/
     width: 90%;
 }
 
@@ -26,59 +26,62 @@ h1, h2, #stopka {
     color: #ffffb0;
 }
 /*Nawigacja*/
-#nav { 
+nav { 
     text-align: left; 
     overflow: hidden; 
     font-family: calibri, tahoma; 
 } 
-ul#nav li { 
+nav li { 
     border: 1px solid #d5d5d5; 
     list-style-type: none; 
     float: left; background: #98bed8; 
     margin-left: 3px; 
 } 
-ul#nav li:hover { 
+nav li:hover { 
     border: 1px solid #d5d5d5; 
     list-style-type: none; 
     float: left; 
     background: #f0f0f0; 
     margin-left: 3px; 
 } 
-ul#nav li a { 
+nav li a { 
     display : block; 
     padding : 4pt; 
     text-decoration :none; 
 } 
-ul#nav li li a { 
+nav li li a { 
     width: 160px; 
 } 
-ul#nav li li:hover { 
+nav li li:hover { 
     background: white; 
 } 
-ul#nav li ul { 
+nav li ul { 
     overflow: hidden; 
     display: none; 
 } 
-ul#nav li:hover ul { 
+nav li:hover ul { 
     position: absolute; 
     background: #aaa; 
-    padding: 0; display: 
-    block; 
+    padding: 0; 
+    display: block; 
     width: 177px; 
 }
 
 /*Pozycjonowanie elementów na stronie */
-#tresc {
+main {
     float:left;
     width:75%;
     padding:1%;
     background: #7ea8bf;
-}#pasek {
+}
+aside {
     float:right;
     width:20%; 
     padding:1%;
 }
-#stopka{
+footer{
+    background-color: white;
+    color: black;
     clear:both;
     width:100%;
     padding:5px 0 5px 0;
