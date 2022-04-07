@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Głowna - Lab1</title>
+    <title>Głowna</title>
 
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <script src="navigation.js" defer></script>
 </head>
 
 <body>
@@ -14,15 +15,15 @@
             <nav>
                 <h2 id="baner">Szybki kurs HTML</h2>
                 <ul class="bar">
-                    <li><a href="index.html">Podstawy</a></li>
-                    <li><a href="pages/tables.html">Tabele</a></li>
+                    <li><a class="nav" href="index.html">Podstawy</a></li>
+                    <li><a class="nav" href="pages/tables.html">Tabele</a></li>
                     <li><a href="">Formularze</a>
                         <ul>
-                            <li><a href="/pages/forms.html">Pola formularza</a></li>
-                            <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                            <li><a class="nav nested" href="/pages/forms.html">Pola formularza</a></li>
+                            <li><a class="nav nested" href="obliczenia.html">Obliczenia w formularzu</a></li>
                         </ul>
                     </li>
-                    <li><a href="pages/gallery.html" title="">Galeria</a></li>
+                    <li><a class="nav" href="pages/gallery.html" title="">Galeria</a></li>
                     <li><a href="javascript:void(0);" class="coursesMenu">Kursy</a></li>
                 </ul>        
             </nav>
@@ -56,13 +57,7 @@
             <p><a href="https://validator.w3.org/">HTML walidator<img src="img/w3c.png" alt="w3c logo"></a></p>
         </main>
         
-        <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="img/GitHub-Mark-32px.png" style="width: 16px;"></a></footer>
-        
-        <script>
-            const coursesMenu = document.querySelector('.coursesMenu');
-            const aside = document.querySelector('aside');
-            coursesMenu.addEventListener('click',() => aside.classList.toggle('visible'));
-        </script>
+        <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="img/GitHub-Mark-32px.png" alt="gitHubMark" style="width: 16px;"></a></footer>
 </body>
 
 </html>

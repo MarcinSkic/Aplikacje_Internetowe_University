@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tabele - Lab1</title>
+        <title>Tabele</title>
         <style>
             table, th, td {
                 border: 1px solid black; /*Validator advised me to use CSS so I did*/
@@ -11,102 +11,100 @@
         </style>
         <link href="../CSS/style.css" rel="stylesheet">
         <link href="../CSS/tables.css" rel="stylesheet">
+        <script src="../navigation.js" defer></script>
     </head>
     <body>
-        <div id="kontener">
-            <header>
+        <header>
+            <nav>
                 <h2 id="baner">Szybki kurs HTML</h2>
-                <nav>
-                    <li><a href="../index.html">Podstawy</a></li>
-                    <li><a href="tables.html">Tabele</a></li>
+                <ul class="bar">
+                    <li><a class="nav" href="../index.html">Podstawy</a></li>
+                    <li><a class="nav" href="tables.html">Tabele</a></li>
                     <li><a href="">Formularze</a>
                         <ul>
-                            <li><a href="forms.html">Pola formularza</a></li>
-                            <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                            <li><a class="nav nested" href="/pages/forms.html">Pola formularza</a></li>
+                            <li><a class="nav nested" href="obliczenia.html">Obliczenia w formularzu</a></li>
                         </ul>
                     </li>
-                    <li><a href="gallery.html" title="">Galeria</a></li>
-                </nav>
-            </header>
-            <main>
-                <h3>Podstawowe znaczniki do tworzenia tabel to:</h3>
-                <ul>
-                    <li>&lt;table&gt; - znacznik zawierający całą tabelę</li>
-                    <li>&lt;caption&gt; - tytuł tabeli</li>
-                    <li>&lt;thead&gt; - nagłowek tabeli</li>
-                    <li>&lt;tbody&gt; - zawartość tabeli</li>
-                    <li>&lt;tfoot&gt; - stopka tabeli</li>
-                    <li>&lt;tr&gt; - wiersz tabeli</li>
-                    <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
-                    <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
-                </ul>
+                    <li><a class="nav" href="gallery.html" title="">Galeria</a></li>
+                    <li><a href="javascript:void(0);" class="coursesMenu">Kursy</a></li>
+                </ul>        
+            </nav>
+        </header>
+        <aside>
+            <h3>Walidatory:</h3>
+            <ul>
+                <li> <a href="https://validator.w3.org/">HTML</a></li>
+                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+            <h3>Kursy:</h3>
+            <ul>
+                <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+            </ul>
+        </aside>
+        <main>
+            <h3>Podstawowe znaczniki do tworzenia tabel to:</h3>
+            <ul>
+                <li>&lt;table&gt; - znacznik zawierający całą tabelę</li>
+                <li>&lt;caption&gt; - tytuł tabeli</li>
+                <li>&lt;thead&gt; - nagłowek tabeli</li>
+                <li>&lt;tbody&gt; - zawartość tabeli</li>
+                <li>&lt;tfoot&gt; - stopka tabeli</li>
+                <li>&lt;tr&gt; - wiersz tabeli</li>
+                <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+                <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
+            </ul>
 
-                <h3>Przykładowa tabela HTML:</h3>
-                <table>
-                    <caption>Popularność języków programowania</caption>
-                        <thead>
-                        <tr>
-                            <th rowspan="2">Język programowania</th>
-                            <th colspan="2">Pozycja</th>
-                        </tr>
-                        <tr>
-                            <th>Luty 2020</th>
-                            <th>Luty 2015</th> 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Java</td>
-                            <td>1</td>
-                            <td>2</td>
-                        </tr>
-                        <tr class="parzysty">
-                            <td>C</td>
-                            <td>2</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>3</td>
-                            <td>7</td>
-                        </tr>
-                        <tr class="parzysty">
-                            <td>C++</td>
-                            <td>4</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>C#</td>
-                            <td>5</td>
-                            <td>7</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3"><div>Na podstawie:</div> <a href="https://www.tiobe.com/tiobe-index//">https://www.tiobe.com/tiobe-index//</a></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </main>
-            <aside>
-                <div class="box">
-                    <h3>Walidatory:</h3>
-                    <ul>
-                        <li> <a href="https://validator.w3.org/">HTML</a></li>
-                        <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h3>Kursy:</h3>
-                    <ul>
-                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
-                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
-                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
-                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
-                    </ul>
-                </div>
-            </aside>
-            <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="../img/GitHub-Mark-32px.png" style="width: 16px;"></a></footer>
-        </div>
+            <h3>Przykładowa tabela HTML:</h3>
+            <table>
+                <caption>Popularność języków programowania</caption>
+                    <thead>
+                    <tr>
+                        <th rowspan="2">Język programowania</th>
+                        <th colspan="2">Pozycja</th>
+                    </tr>
+                    <tr>
+                        <th>Luty 2020</th>
+                        <th>Luty 2015</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr class="parzysty">
+                        <td>C</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr class="parzysty">
+                        <td>C++</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><div>Na podstawie:</div> <a href="https://www.tiobe.com/tiobe-index//">https://www.tiobe.com/tiobe-index//</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="../img/GitHub-Mark-32px.png" alt="gitHubMark" style="width: 16px;"></a></footer>
     </body>
 </html>

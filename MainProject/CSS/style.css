@@ -34,6 +34,14 @@ a {
     color: inherit;
 }
 
+a.active {
+    background-color: #04AA6D;
+}
+
+a.coursesMenu.active {
+    background-color: #000000;
+}
+
 nav {
     font-family: calibri, tahoma;
 
@@ -98,7 +106,7 @@ main {
 
 aside {
     background-color: #E7E9EB;
-    position: fixed;
+    position: absolute;
     right: 0;
     overflow: auto;
     width: 125px; 

@@ -4,28 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularze - Lab1</title>
+    <title>Pola formularza</title>
 
     <link href="../CSS/style.css" rel="stylesheet">
     <link href="../CSS/forms.css" rel="stylesheet">
+    <script src="../navigation.js" defer></script>
 </head>
 
 <body>
-    <div id="kontener">
         <header>
-            <h2 id="baner">Szybki kurs HTML</h2>
             <nav>
-                <li><a href="../index.html">Podstawy</a></li>
-                <li><a href="tables.html">Tabele</a></li>
-                <li><a href="" id="navForms">Formularze</a>
-                    <ul>
-                        <li><a href="forms.html">Pola formularza</a></li>
-                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
-                    </ul>
-                </li>
-                <li><a href="" title="">Galeria</a></li>
+                <h2 id="baner">Szybki kurs HTML</h2>
+                <ul class="bar">
+                    <li><a class="nav" href="../index.html">Podstawy</a></li>
+                    <li><a class="nav" href="tables.html">Tabele</a></li>
+                    <li><a href="">Formularze</a>
+                        <ul>
+                            <li><a class="nav nested" href="/pages/forms.html">Pola formularza</a></li>
+                            <li><a class="nav nested" href="obliczenia.html">Obliczenia w formularzu</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav" href="gallery.html" title="">Galeria</a></li>
+                    <li><a href="javascript:void(0);" class="coursesMenu">Kursy</a></li>
+                </ul>        
             </nav>
         </header>
+        <aside>
+            <h3>Walidatory:</h3>
+            <ul>
+                <li> <a href="https://validator.w3.org/">HTML</a></li>
+                <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+            </ul>
+            <h3>Kursy:</h3>
+            <ul>
+                <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+            </ul>
+        </aside>
         <main>
             <h3>Podstawowe znaczniki formularza HTML to:</h3>
             <ul>
@@ -51,38 +68,25 @@
                     </div>
                     
                     <h4>Zamawiam tutorial z języka:</h4>
-                    <input type="checkbox" name="PHP" value="PHP" id="PHP" /> <label for="PHP">PHP</label>
-                    <input type="checkbox" name="C" value="C" id="C"/> <label for="C">C/C++</label>
-                    <input type="checkbox" name="Java" value="J" id="Java"/> <label for="Java">Java</label>
-                    
+                    <div>
+                        <input type="checkbox" name="PHP" value="PHP" id="PHP" /> <label for="PHP">PHP</label>
+                        <input type="checkbox" name="C" value="C" id="C"/> <label for="C">C/C++</label>
+                        <input type="checkbox" name="Java" value="J" id="Java"/> <label for="Java">Java</label>
+                    </div>
                     <h4>Sposób zapłaty:</h4>
-                    <input type="radio" name="payment" value="eu" id="eu" /> <label for="eu">eurocard</label>
-                    <input type="radio" name="payment" value="visa" id="visa" /> <label for="visa">visa</label>
-                    <input type="radio" name="payment" value="transfer" id="transfer" /> <label for="transfer">przelew bankowy</label> <br />
-                    <input type="submit" value="Wyślij" />
-                    <input type="reset" value="Anuluj" />
+                    <div>
+                        <input type="radio" name="payment" value="eu" id="eu" /> <label for="eu">eurocard</label>
+                        <input type="radio" name="payment" value="visa" id="visa" /> <label for="visa">visa</label>
+                        <input type="radio" name="payment" value="transfer" id="transfer" /> <label for="transfer">przelew bankowy</label>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" value="Wyślij" />
+                        <input type="reset" value="Anuluj" />
+                    </div>
                 </form>
             </div>
         </main>
-        <aside>
-            <div class="box">
-                <h3>Walidatory:</h3>
-                <ul>
-                    <li> <a href="https://validator.w3.org/">HTML</a></li>
-                    <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>Kursy:</h3>
-                <ul>
-                    <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
-                    <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
-                    <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
-                    <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
-                </ul>
-            </div>
-        </aside>
-        <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="../img/GitHub-Mark-32px.png" style="width: 16px;"></a></footer>
+        <footer>&copy;MS <a href="https://github.com/MarcinSkic"><img src="../img/GitHub-Mark-32px.png" alt="gitHubMark" style="width: 16px;"></a></footer>
     </div>
 </body>
 
