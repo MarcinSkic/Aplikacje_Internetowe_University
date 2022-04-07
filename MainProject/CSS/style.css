@@ -48,6 +48,8 @@ nav {
     color: #f1f1f1;
     background-color: #282A35;
 
+    box-shadow: 0px 1px 5px #282a3572;
+
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
@@ -66,7 +68,8 @@ nav li:hover {
     color: #ffffff;
 } 
 
-nav li a { 
+nav li a {
+    box-sizing: border-box;
     display : block; 
     padding : 4pt; 
     text-decoration: none;
@@ -90,7 +93,7 @@ nav li:hover ul {
     padding: 0;
 
     display: block; 
-    width: 177px; 
+    width: 160px; 
     position: absolute;
     z-index: 1;
 
