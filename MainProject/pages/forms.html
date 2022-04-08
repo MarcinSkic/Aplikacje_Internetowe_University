@@ -56,26 +56,26 @@
                 <h3>Przykładowy formularz HTML:</h3>
                 <form action="mailto:s95565@pollub.pl" method="post">
                     <div class="basic-info">
-                        <div class="info-row"><label for="surname">Nazwisko:</label> <input type="text" name="surname" id="surname"/> </div>
-                        <div class="info-row"><label for="age">Wiek:</label><input type="number" name="age" id="age"/></div>
-                        <div class="info-row"><label for="country" >Państwo:</label> <select name="country" id="country">
+                        <div class="info-row"><label for="surname">Nazwisko:</label> <input type="text" name="surname" id="surname" required/> </div>
+                        <div class="info-row"><label for="age">Wiek:</label><input type="number" name="age" id="age" min='1' max ='150' required/></div>
+                        <div class="info-row"><label for="country" >Państwo:</label> <select name="country" id="country" required>
                             <option value="pl">Polska</option>
                             <option value="de">Niemcy</option>
                             <option value="gb">Wielka Brytania</option>
                             <option value="fr">Francja</option>
                         </select></div>
-                        <div class="info-row"><label for="email">Adres e-mail:</label> <input type="email" name="email" id="email"></div>
+                        <div class="info-row"><label for="email">Adres e-mail:</label> <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9_]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$" required></div>
                     </div>
                     
                     <h4>Zamawiam tutorial z języka:</h4>
                     <div>
-                        <input type="checkbox" name="PHP" value="PHP" id="PHP" /> <label for="PHP">PHP</label>
+                        <input type="checkbox" name="PHP" value="PHP" id="PHP"/> <label for="PHP">PHP</label>
                         <input type="checkbox" name="C" value="C" id="C"/> <label for="C">C/C++</label>
                         <input type="checkbox" name="Java" value="J" id="Java"/> <label for="Java">Java</label>
                     </div>
                     <h4>Sposób zapłaty:</h4>
                     <div>
-                        <input type="radio" name="payment" value="eu" id="eu" /> <label for="eu">eurocard</label>
+                        <input type="radio" name="payment" value="eu" id="eu" required/> <label for="eu">eurocard</label>
                         <input type="radio" name="payment" value="visa" id="visa" /> <label for="visa">visa</label>
                         <input type="radio" name="payment" value="transfer" id="transfer" /> <label for="transfer">przelew bankowy</label>
                     </div>

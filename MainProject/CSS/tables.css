@@ -1,5 +1,5 @@
 table {
-    background: #ffffb3;
+    background: white;
     text-align: center;
     width: 94%;
     margin: 2%;
@@ -11,7 +11,7 @@ caption {
 }
 
 tfoot, thead {
-    background: #0000a0;
+    background: #04AA6D;
     color: white;
     font-size: 120%;
 }
@@ -25,6 +25,6 @@ tfoot a {
     color: white;
 }
 
-.parzysty {
-    background: white;
+tbody tr:nth-child(2n) {
+    background-color: #d4d4d4;
 }
